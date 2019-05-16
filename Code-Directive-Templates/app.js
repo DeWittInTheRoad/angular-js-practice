@@ -36,7 +36,7 @@ myApp.controller('secondController', ['$scope', '$log', '$routeParams', function
 myApp.directive("searchResult", function() {
    return {
        restrict: 'AECM',
-       template: '<a href="#" class="list-group-item"><h4 class="list-group-item-heading">Doe, John</h4><p class="list-group-item-text">555 Main St., New York, NY 11111</p></a>',
+       templateUrl: 'directives/searchresult.html',
        replace: true
    }
 });
