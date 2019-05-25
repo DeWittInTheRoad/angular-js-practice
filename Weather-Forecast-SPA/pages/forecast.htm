@@ -1,1 +1,12 @@
 Forecast for {{city}}
+
+<div class="row">
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					Date: {{convertToDate(weatherResult.dt) | date: 'MMM d, y'}}
+					<h3 class="panel-title">Daytime temperature: {{convertToFahrenheit(weatherResult.main.temp)}} F</h3>
+				</div>
+			</div>
+		</div>
+	</div>
